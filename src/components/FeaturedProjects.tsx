@@ -21,15 +21,30 @@ const projects: Project[] = [
     title: "Social Sheild",
     description: "Pariatur id in ea eu ex consequat tempor nisi enim reprehenderit qui quis est ad.",
     tags: ["Typescript", "Javascript", "convex", "a0.dev"],
-    websiteUrl: "https://taskflow-demo.vercel.app",
+    websiteUrl: "https://v0-login-page-beta-bice.vercel.app",
     sourceUrl: "https://github.com/tasticp/Social-Shield",
   },
   {
     id: 2,
     title: "International Obfuscated C Code Contest",
-    description: "Velit mollit commodo proident sint.",
+    description: "C code that i wanna use to learn Ghidra.",
     tags: ["C", "CSS", "Makefile", "Cursor", "kiro"],
     sourceUrl: "https://github.com/tasticp/IOCCC",
+  },
+  {
+    id: 3,
+    title: "interconnected-maybe",
+    description: "Website for any and all.",
+    tags: ["Typescript", "CSS", "Builder.io", "hopefully hosted on Vercel"],
+    websiteUrl: "https://v0-login-page-beta-bice.vercel.app",
+    sourceUrl: "https://github.com/tasticp/interconnected-maybe",
+  },
+  {
+    id: 4,
+    title: "Real-Time-Immutable-Encryptions",
+    description: "immiscible in court against Gun Rack.",
+    tags: ["Rust", "Python", "Typescript", "Docker", "OpenCode"],
+    sourceUrl: "https://github.com/tasticp/Real-Time-Immutable-Encryptions",
   },
 ];
 

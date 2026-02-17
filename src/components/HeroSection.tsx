@@ -23,7 +23,7 @@ export function HeroSection() {
             </div>
 
             <p className="text-foreground/90 max-w-md">
-              Exercitation ipsum cupidatat id ex reprehenderit ipsum elit est veniam eiusmod eu.
+              vro js text me @tasticp on tele
             </p>
 
             <p className="text-foreground">

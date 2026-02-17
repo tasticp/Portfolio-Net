@@ -22,7 +22,7 @@ const posts = [
     title: "Shits ive Learnt somewhat ?",
     excerpt:
       "Do laboris culpa consequat aute.",
-    tags: ["git", "C", "C++", "Python","PLC","HTML","CSS","Javascript","Packet Tracer"],
+    tags: ["git", "C", "C++", "Python","PLC","HTML","CSS","Javascript","Packet Tracer","OpenSSH","ROS"],
     date: "NOW , 2026",
     readTime: "∞ min learn",
     views: 6969,
