@@ -13,6 +13,7 @@ export default function PrivacyPage() {
               [Add your privacy policy content here. Explain what data you
               collect, how you use it, and how visitors can contact you about
               privacy concerns.]
+              as you can tell i dont know how to collect data nor amm i collect anythn at all, me kinda dumb TT
             </p>
             <h2 className="text-2xl font-semibold text-foreground">
               Data Collection
@@ -24,7 +25,7 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-semibold text-foreground">
               Analytics
             </h2>
-            <p>[If you use analytics tools, describe them here.]</p>
+            <p>[If you use analytics tools, describe them here.]if netlify has them it probly did but idk how to use TT</p>
             <h2 className="text-2xl font-semibold text-foreground">Contact</h2>
             <p>[Provide contact information for privacy-related inquiries.]</p>
           </div>

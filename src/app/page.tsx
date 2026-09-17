@@ -13,9 +13,15 @@ export default function Home() {
         <HeroSection />
         <ExperienceSection />
         <FeaturedProjects />
-        <RecentPosts />
+        
       </main>
       <Footer />
     </div>
   );
 }
+/* 
+the sapce between <FeaturedProjects /> and </main>
+
+<RecentPosts />
+
+*/

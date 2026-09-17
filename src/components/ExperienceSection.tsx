@@ -14,6 +14,7 @@ interface ExperienceItem {
 }
 
 const workExperience: ExperienceItem[] = [
+  /*
   {
     id: 1,
     company: "aliqua culpa laborum",
@@ -21,6 +22,18 @@ const workExperience: ExperienceItem[] = [
     period: "20XX - 20XX",
     description: [
       "Excepteur in magna ea.",
+      "Eu eiusmod in duis et culpa do velit officia aute.",
+      "Occaecat cupidatat esse cupidatat velit sunt.",
+    ],
+  },
+  */
+  {
+    id: 1,
+    company: "Festo Pte Ltd",
+    role: "Didatic Intern",
+    period: "2026 - 2027",
+    description: [
+      "3D modeling, CIROS Studio.",
       "Eu eiusmod in duis et culpa do velit officia aute.",
       "Occaecat cupidatat esse cupidatat velit sunt.",
     ],
@@ -50,6 +63,7 @@ const workExperience: ExperienceItem[] = [
 ];
 
 const education: ExperienceItem[] = [
+  /*
   {
     id: 1,
     company: "est veniam tempor of Singapore",
@@ -61,30 +75,32 @@ const education: ExperienceItem[] = [
       "?????? President of Coding Club, organized hackathons and tech talks ?????",
     ],
   },
+  */
   {
-    id: 2,
+    id: 1, //2,
     company: "Singapore Institute of Technology",
     role: "Student",
     period: "2026 - 2026",
     description: [
-      "Graduated??? with ????? (GPA: ?????/????)",
-      "Relevant coursework: ??/????",
-      "Participant in ?????, organized ??????",
+      "Graduated N/A with 5.0 (GPA: 5.0/5.0)",
+      "Relevant coursework: 5.0/5.0.", //Data Structures, Algorithms, Web Development, Database Systems",
+      "Programming module (ENG1008).",
+      //"Participant in ?????, organized ??????",
     ],
   },
   {
-    id: 3,
+    id: 2, //3,
     company: "Ngee Ann Polytechnic",
     role: "Diploma in Mechatronics & Robotics",
     period: "Apr 2025 - Apr 2027",
     description: [
-      "Graduated with Honors (GPA: 3.5/4.0), Completed with ????, specialized in Cyber-Security",
+      "Graduated with Honors (GPA: 3.7/4.0), Completed with ????, specialized in Cyber-Security",
       "Final year project: E-commerce platform with payment integration",
-      "Directors's List for academic excellence",
+      "Directors's List for Academic excellence AY2025/2026",
     ],
   },
   {
-    id: 4,
+    id: 3,//4,
     company: "Institute of Technical Education",
     role: "Diploma in Mechatronics & Robotics",
     period: "Apr 2025 - Apr 2027",
@@ -95,14 +111,14 @@ const education: ExperienceItem[] = [
     ],
   },
   {
-    id: 5,
+    id: 4,//5,
     company: "Sembawang Secondary School",
     role: "O/N Level Certificate",
     period: "Jan 2019 - Dec 2022",
     description: [
       "Graduated ([raw GPA: 11] [net GPA: 9])",
       "SYF - Certificate of Accomplishment in 2021",
-      "Band Major in Woodwind band - 2022 Section Leader in Woodwind band ",
+      "2022 Band Major in Woodwind band - 2022 Section Leader in Woodwind band ",
       "2020 Head Librarian in Woodwind band - 2020 Cyber Wellness Leader - 2019 Upper Sec CCA Committee Leader",
     ],
   },

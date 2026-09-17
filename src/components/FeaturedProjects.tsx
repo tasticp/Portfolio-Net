@@ -16,6 +16,8 @@ interface Project {
 }
 
 const projects: Project[] = [
+
+  /*
   {
     id: 1,
     title: "Social Sheild",
@@ -45,6 +47,22 @@ const projects: Project[] = [
     description: "immiscible in court against Gun Rack.",
     tags: ["Rust", "Python", "Typescript", "Docker", "OpenCode"],
     sourceUrl: "https://github.com/tasticp/Real-Time-Immutable-Encryptions",
+  },
+  */
+  {
+    id: 1,
+    title: "Social Sheild",
+    description: "Pariatur id in ea eu ex consequat tempor nisi enim reprehenderit qui quis est ad.",
+    tags: ["Typescript", "Javascript", "convex", "a0.dev"],
+    websiteUrl: "https://v0-login-page-beta-bice.vercel.app",
+    sourceUrl: "https://github.com/tasticp/Social-Shield",
+  },
+  {
+    id: 2,
+    title: "International Obfuscated C Code Contest",
+    description: "C code that i wanna use to learn Ghidra.",
+    tags: ["C", "CSS", "Makefile", "Cursor", "kiro"],
+    sourceUrl: "https://github.com/tasticp/IOCCC",
   },
 ];
 

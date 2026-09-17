@@ -8,14 +8,18 @@ import { Globe, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    imageSrc: "/images/projects/test.png",
+    // public can be taken as root dont need ../
     title: "Social Sheild",
-    description: "A comprehensive project management tool with real-time collaboration, Kanban boards, and advanced analytics dashboard for teams.",
+    description:
+      "A comprehensive project management tool with real-time collaboration, Kanban boards, and advanced analytics dashboard for teams.",
     tags: ["Typescript", "Javascript", "convex", "a0.dev"],
     websiteUrl: "https://github.com/tasticp/Social-Shield",
     sourceUrl: "https://github.com/tasticp/Social-Shield",
   },
   {
     id: 2,
+    imageSrc: "/images/projects/test.png",
     title: "International Obfuscated C Code Contest",
     description: "Occaecat ex dolore cupidatat sint deserunt deserunt.",
     tags: ["C", "CSS", "Makefile", "Cursor", "kiro"],
@@ -23,16 +27,28 @@ const projects = [
   },
   {
     id: 3,
+    //imageSrc: "/images/projects/test.png",
     title: "bed browser with zed",
-    description: "Irure in cillum ad officia laborum aliquip proident consectetur irure labore consectetur esse labore.",
-    tags: ["Batchfile", "Powershell", "Javascript", "Rust", "CSS", "Python", "Shell"],
+    description:
+      "Irure in cillum ad officia laborum aliquip proident consectetur irure labore consectetur esse labore.",
+    tags: [
+      "Batchfile",
+      "Powershell",
+      "Javascript",
+      "Rust",
+      "CSS",
+      "Python",
+      "Shell",
+    ],
     websiteUrl: "https://github.com/Gods-Type/bed",
     sourceUrl: "https://github.com/Gods-Type/bed",
   },
   {
     id: 4,
+    //imageSrc: "/images/projects/test.png",
     title: "Geo-Locator-Finder",
-    description: "Reprehenderit exercitation anim laborum laboris ipsum voluptate incididunt.",
+    description:
+      "Reprehenderit exercitation anim laborum laboris ipsum voluptate incididunt.",
     tags: ["Typescript", "Javascript", "convex", "a0.dev"],
     websiteUrl: "https://github.com/tasticp/Geo-Locator-Finder",
     sourceUrl: "https://github.com/tasticp/Geo-Locator-Finder",
@@ -47,7 +63,8 @@ export default function ProjectsPage() {
         <div className="container">
           <h1 className="text-4xl font-bold mb-8">projects</h1>
           <p className="text-muted-foreground mb-12 max-w-2xl">
-          Ad sit excepteur esse. Sunt deserunt elit dolor ullamco occaecat eu labore do amet eu.
+            Ad sit excepteur esse. Sunt deserunt elit dolor ullamco occaecat eu
+            labore do amet eu.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -56,19 +73,33 @@ export default function ProjectsPage() {
                 key={project.id}
                 className="group overflow-hidden border-border/50 bg-card/50 backdrop-blur hover:border-primary/30 transition-colors"
               >
-                <div className="aspect-video bg-muted flex items-center justify-center border-b border-border/50">
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 mx-auto rounded-lg bg-muted-foreground/20 flex items-center justify-center mb-3">
-                      <span className="text-2xl text-muted-foreground/50">
-                        ?
-                      </span>
+ 
+                <div className="aspect-video bg-muted flex items-center justify-center border-b border-border/50 relative overflow-hidden">
+                  {project.imageSrc ? (
+                    /* Displays the image if a path exists, new frm here to "^" */
+                    //img normally but nxt.js can use Image for better optimization and performance
+                    <Image
+                      src={project.imageSrc}
+                      alt={project.title || "Project screenshot"}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    /* Fallback placeholder if there is no image path, new to here ^  and purple } bracket at the orange ) 11 line below this comment*/
+                    <div className="text-center p-4">
+                      <div className="w-16 h-16 mx-auto rounded-lg bg-muted-foreground/20 flex items-center justify-center mb-3">
+                        <span className="text-2xl text-muted-foreground/50">
+                          ?
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">
+                        Add project screenshot
+                      </p>
                     </div>
-                    <p className="text-xs text-muted-foreground">
-                      Add project screenshot
-                    </p>
-                  </div>
+                  )}
                 </div>
-
+                
+                
+        
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     {project.title}
