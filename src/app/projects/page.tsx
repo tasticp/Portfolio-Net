@@ -5,11 +5,12 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Globe, Github } from "lucide-react";
 import Image from "next/image";
+import testImage from "@/images/projects/test.jpg";
 
 const projects = [
   {
     id: 1,
-    imageSrc: "/images/projects/test.png",
+    imageSrc: "/images/projects/test.jpg",
     // public can be taken as root dont need ../
     title: "Social Sheild",
     description:
@@ -20,7 +21,7 @@ const projects = [
   },
   {
     id: 2,
-    imageSrc: "/images/projects/test.png",
+    imageSrc: testImage,
     title: "International Obfuscated C Code Contest",
     description: "Occaecat ex dolore cupidatat sint deserunt deserunt.",
     tags: ["C", "CSS", "Makefile", "Cursor", "kiro"],
@@ -28,7 +29,7 @@ const projects = [
   },
   {
     id: 3,
-    //imageSrc: "/images/projects/test.png",
+    //imageSrc: "/images/projects/test.jpg",
     title: "bed browser with zed",
     description:
       "Irure in cillum ad officia laborum aliquip proident consectetur irure labore consectetur esse labore.",
@@ -46,7 +47,7 @@ const projects = [
   },
   {
     id: 4,
-    //imageSrc: "/images/projects/test.png",
+    //imageSrc: "/images/projects/test.jpg",
     title: "Geo-Locator-Finder",
     description:
       "Reprehenderit exercitation anim laborum laboris ipsum voluptate incididunt.",
@@ -82,7 +83,10 @@ export default function ProjectsPage() {
                     <Image
                       src={project.imageSrc}
                       alt={project.title || "Project screenshot"}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      
                     />
                   ) : (
                     /* Fallback placeholder if there is no image path, new to here ^  and purple } bracket at the orange ) 11 line below this comment*/

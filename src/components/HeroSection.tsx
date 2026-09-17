@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github, Mail, FileText } from "lucide-react";
 
+
 export function HeroSection() {
   const [imageError, setImageError] = useState(false);
 
@@ -14,22 +15,31 @@ export function HeroSection() {
           {/* Left side - Text content */}
           <div className="flex-1 space-y-6">
             <div className="space-y-2">
+              
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Tastcip_
+                Kelvin {/* Tastcip_ */}
               </h1>
               <p className="text-lg text-muted-foreground">
-                ??yo Developer from Singapore
+                Student from Singapore {/* ??yo Developer from Singapore */}
               </p>
             </div>
 
             <p className="text-foreground/90 max-w-md">
-              vro js text me @tasticp on tele
+              Mechatronics Engineer{/* vro js text me @tasticp on tele */}
             </p>
 
             <p className="text-foreground">
-              Open to collaborations & fucking arnd
+              Open to collaborations & Learning {/* Open to collaborations & fucking arnd */}
             </p>
 
+            <p className="text-sm text-muted-foreground">
+              Currently working at{" "}
+              <a href="#" className="text-primary hover:underline">
+                Festo Pte Ltd
+              </a>{" "}
+               as an internship.
+            </p>
+            {/* 
             <p className="text-sm text-muted-foreground">
               Currently exploring{" "}
               <a href="#" className="text-primary hover:underline">
@@ -37,6 +47,7 @@ export function HeroSection() {
               </a>{" "}
               in applications maybe.
             </p>
+            */}
 
             <div className="flex items-center gap-3 pt-2">
               <Button variant="outline" className="gap-2" asChild>
@@ -68,7 +79,8 @@ export function HeroSection() {
             <div className="w-64 h-80 md:w-72 md:h-96 rounded-lg overflow-hidden bg-card border-2 border-border shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
               {!imageError ? (
                 <img
-                  src="https://avatars.githubusercontent.com/u/170114934?v=4"
+                  //src="https://avatars.githubusercontent.com/u/170114934?v=4"//the girl
+                  src="/images/projects/test.png"//
                   alt="tasticp"
                   className="w-full h-full object-cover"
                   onError={() => setImageError(true)}

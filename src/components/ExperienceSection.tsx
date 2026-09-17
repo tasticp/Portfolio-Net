@@ -3,6 +3,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { Building2, GraduationCap } from "lucide-react";
+import { building, buildings } from "@phosphor-icons/react";
+import { MindOx_Trans, Festo_Trans } from "@/icons";
 
 interface ExperienceItem {
   id: number;
@@ -32,6 +34,7 @@ const workExperience: ExperienceItem[] = [
     company: "Festo Pte Ltd",
     role: "Didatic Intern",
     period: "2026 - 2027",
+    logo: Festo_Trans,
     description: [
       "3D modeling, CIROS Studio.",
       "Eu eiusmod in duis et culpa do velit officia aute.",
@@ -43,6 +46,7 @@ const workExperience: ExperienceItem[] = [
     company: "Mindox Techno",
     role: "Intern",
     period: "Apr 2024 - Aug 2024",
+    logo: MindOx_Trans,
     description: [
       "Logistics, Assembly, Microsoft Software.",
       "Cillum nostrud do quis ullamco veniam occaecat ipsum aliquip officia.",
@@ -80,7 +84,8 @@ const education: ExperienceItem[] = [
     id: 1, //2,
     company: "Singapore Institute of Technology",
     role: "Student",
-    period: "2026 - 2026",
+    period: "Mar 2026 - Apr 2026",
+    logo: servlet,
     description: [
       "Graduated N/A with 5.0 (GPA: 5.0/5.0)",
       "Relevant coursework: 5.0/5.0.", //Data Structures, Algorithms, Web Development, Database Systems",
@@ -93,6 +98,7 @@ const education: ExperienceItem[] = [
     company: "Ngee Ann Polytechnic",
     role: "Diploma in Mechatronics & Robotics",
     period: "Apr 2025 - Apr 2027",
+    logo: NP_poly,
     description: [
       "Graduated with Honors (GPA: 3.7/4.0), Completed with ????, specialized in Cyber-Security",
       "Final year project: E-commerce platform with payment integration",
@@ -100,10 +106,12 @@ const education: ExperienceItem[] = [
     ],
   },
   {
-    id: 3,//4,
+    id: 3, //4,
     company: "Institute of Technical Education",
     role: "Diploma in Mechatronics & Robotics",
     period: "Apr 2025 - Apr 2027",
+    //logo: ITE,
+    logo: SIT_Uni,
     description: [
       "Graduated (raw GPA: 3.75/4.0), Completed Diploma",
       "Final year Internship: Logistics, Assembly.",
@@ -111,10 +119,11 @@ const education: ExperienceItem[] = [
     ],
   },
   {
-    id: 4,//5,
+    id: 4, //5,
     company: "Sembawang Secondary School",
     role: "O/N Level Certificate",
     period: "Jan 2019 - Dec 2022",
+    logo: SembSec,
     description: [
       "Graduated ([raw GPA: 11] [net GPA: 9])",
       "SYF - Certificate of Accomplishment in 2021",
@@ -129,7 +138,14 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
     <div className="flex gap-4 p-4">
       <div className="flex-shrink-0">
         <div className="w-12 h-12 rounded-lg bg-muted flex items-center justify-center">
-          <Building2 className="w-6 h-6 text-muted-foreground" />
+          <div className="w-12 h-12 rounded-lg bg-muted flex items-center justify-center">
+            {item.icon ? (
+              <item.icon className="w-8 h-8 object-contain" />
+            ) : (
+              <Building2 className="w-6 h-6 text-muted-foreground" />
+            )}
+          </div>
+          {/* ICON */}
         </div>
       </div>
       <div className="flex-1 min-w-0">
