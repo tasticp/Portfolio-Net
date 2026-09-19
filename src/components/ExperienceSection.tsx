@@ -33,6 +33,8 @@ import NP_poly from "@/icons/NP_poly.ico";
 import NEW_SIT2 from "@/icons/NEW_SIT2.ico";
 import NEW_SMBS from "@/icons/NEW_SMBS.ico";
 import Festo_Trans from "@/icons/Festo_Trans.ico";
+import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 interface ExperienceItem {
   id: number;
@@ -40,9 +42,9 @@ interface ExperienceItem {
   role: string;
   period: string;
   description: string[];
-  logo?: string;
+  //logo?: string;
+  logo: string | StaticImageData;
 }
-
 const workExperience: ExperienceItem[] = [
   /*
   {
