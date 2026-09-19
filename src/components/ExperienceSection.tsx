@@ -28,11 +28,11 @@ import { Card } from "@/components/ui/card";
 import { Building2, GraduationCap } from "lucide-react";
 import { building, buildings } from "@phosphor-icons/react";
 import MindOx_Trans from "@/icons/MindOx_Trans";
-import servlet from "@/icons/servlet";
-import NP_poly from "@/icons/NP_poly";
-import SIT_Uni from "@/icons/SIT_Uni";
-import SembSec from "@/icons/SembSec";
-import Festo_Trans from "@/icons/Festo_Trans";
+import servlet from "@/icons/servlet.ico";
+import NP_poly from "@/icons/NP_poly.ico";
+import SIT_Uni from "@/icons/SIT_Uni.ico";
+import SembSec from "@/icons/SembSec.ico";
+import Festo_Trans from "@/icons/Festo_Trans.ico";
 
 interface ExperienceItem {
   id: number;
