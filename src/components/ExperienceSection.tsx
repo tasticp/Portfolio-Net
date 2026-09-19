@@ -141,7 +141,7 @@ const education: ExperienceItem[] = [
     role: "Diploma in Mechatronics & Robotics",
     period: "Apr 2025 - Apr 2027",
     //logo: ITE,
-    logo: SIT_Uni,
+    logo: NEW_SIT2,
     description: [
       "Graduated (raw GPA: 3.75/4.0), Completed Diploma",
       "Final year Internship: Logistics, Assembly.",
@@ -153,7 +153,7 @@ const education: ExperienceItem[] = [
     company: "Sembawang Secondary School",
     role: "O/N Level Certificate",
     period: "Jan 2019 - Dec 2022",
-    logo: SembSec,
+    logo: NEW_SMBS,
     description: [
       "Graduated ([raw GPA: 11] [net GPA: 9])",
       "SYF - Certificate of Accomplishment in 2021",
