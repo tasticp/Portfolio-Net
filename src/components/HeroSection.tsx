@@ -80,7 +80,7 @@ export function HeroSection() {
               {!imageError ? (
                 <img
                   //src="https://avatars.githubusercontent.com/u/170114934?v=4"//the girl
-                  src="/images/projects/test.png"//
+                  src="/images/projects/test.jpg"//
                   alt="tasticp"
                   className="w-full h-full object-cover"
                   onError={() => setImageError(true)}
