@@ -26,6 +26,7 @@ SIT_Uni
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { Building2, GraduationCap } from "lucide-react";
+import type { ComponentType } from "react";
 //import { building, buildings } from "@phosphor-icons/react";
 import MindOx_Trans from "@/icons/MindOx_Trans.ico";
 import servlet from "@/icons/servlet.ico";
@@ -44,6 +45,7 @@ interface ExperienceItem {
   description: string[];
   //logo?: string;
   logo?: string | StaticImageData;
+  icon?: ComponentType<{ className?: string }>;
 }
 const workExperience: ExperienceItem[] = [
   /*
