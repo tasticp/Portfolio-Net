@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Globe, Github } from "lucide-react";
 import Image from "next/image";
-import testImage from "@/images/projects/test.jpg";
 
 const projects = [
   {

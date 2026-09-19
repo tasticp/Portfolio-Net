@@ -1,10 +1,33 @@
+/*
+
+Festo_Trans
+Festo_transparent
+Festo.wine
+MindOx_Techno_transparent.ico
+MindOx_Trans
+mindoxtechno
+NEW_ite-logo
+NEW_SIT2
+NEW_SITTT
+NEW_SITTTTT
+NEW_SMBS
+NP_poly
+sbwpri1
+SembSec
+servlet
+SIT_Uni
+
+*/
+
+
+
 "use client";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { Building2, GraduationCap } from "lucide-react";
 import { building, buildings } from "@phosphor-icons/react";
-import { MindOx_Trans, Festo_Trans } from "@/icons";
+import { MindOx_Trans, Festo_Trans, servlet, NP_poly, SIT_Uni, SembSec } from "@/icons";
 
 interface ExperienceItem {
   id: number;
