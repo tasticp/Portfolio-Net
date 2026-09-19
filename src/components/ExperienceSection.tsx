@@ -43,7 +43,7 @@ interface ExperienceItem {
   period: string;
   description: string[];
   //logo?: string;
-  logo: string | StaticImageData;
+  logo?: string | StaticImageData;
 }
 const workExperience: ExperienceItem[] = [
   /*
