@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: 2,
-    imageSrc: testImage,
+    imageSrc: "/images/projects/test.jpg",
     title: "International Obfuscated C Code Contest",
     description: "Occaecat ex dolore cupidatat sint deserunt deserunt.",
     tags: ["C", "CSS", "Makefile", "Cursor", "kiro"],
