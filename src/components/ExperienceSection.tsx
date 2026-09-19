@@ -27,7 +27,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { Building2, GraduationCap } from "lucide-react";
 import { building, buildings } from "@phosphor-icons/react";
-import { MindOx_Trans, Festo_Trans, servlet, NP_poly, SIT_Uni, SembSec } from "/icons";
+import MindOx_Trans from "@/icons/MindOx_Trans";
+import servlet from "@/icons/servlet";
+import NP_poly from "@/icons/NP_poly";
+import SIT_Uni from "@/icons/SIT_Uni";
+import SembSec from "@/icons/SembSec";
+import Festo_Trans from "@/icons/Festo_Trans";
 
 interface ExperienceItem {
   id: number;
