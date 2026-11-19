@@ -1,9 +1,7 @@
 [build]
-  command = "bun run build"
-  publish = "out"
+  publish = "."
 
-# Add proper redirects for SPA-like behavior
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 404
+  status = 200
