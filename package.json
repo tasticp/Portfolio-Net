@@ -1,0 +1,8 @@
+{
+  "name": "festo-internship-midpoint-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo \"Static HTML site — no compilation required.\""
+  }
+}
