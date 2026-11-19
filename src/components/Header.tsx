@@ -38,6 +38,12 @@ export function Header() {
             home
           </Link>
           <Link
+            href="/internship"
+            className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+          >
+            internship
+          </Link>
+          <Link
             href="/projects"
             className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
           >
