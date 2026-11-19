@@ -34,10 +34,10 @@ export function HeroSection() {
 
             <p className="text-sm text-muted-foreground">
               Currently working at{" "}
-              <a href="#" className="text-primary hover:underline">
+              <a href="/internship" className="text-primary hover:underline">
                 Festo Pte Ltd
               </a>{" "}
-               as an internship.
+              as an internship.
             </p>
             {/* 
             <p className="text-sm text-muted-foreground">
